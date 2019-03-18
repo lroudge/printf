@@ -10,6 +10,8 @@
  */
 int _printf(const char *fmt, ...)
 {
+	if (!fmt || !_strcmp(fmt, "%"))
+		return (-1);
 	int (*pfunc)(va_list);
 	const char *p;
 	int count = 0;
