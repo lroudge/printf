@@ -19,7 +19,7 @@ What you should learn from this project:
 
 ### [2. Just because it's in print doesn't mean it's the gospel]
 * Create a man page for your function
-  
+
 ### [3. With a face like mine, I do better in print](./print_bases.c)
 * Handle the following conversion specifiers:
   - b : the unsigned int argument is converted to binary
@@ -77,7 +77,7 @@ What you should learn from this project:
 ### [16. * ]
 * All the above options work well together.
 
---- 
+---
 
 ### Authors
 * **Tu Vo** - [tuvo1106@gmail.com](https://github.com/tuvo1106)

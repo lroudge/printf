@@ -33,7 +33,6 @@ int print_string(va_list l);
 int print_char(va_list l);
 int _putchar(char c);
 
-//rot 13
 int print_rot13(va_list l);
 char *rot13(char *s);
 int _strlen(char *s);

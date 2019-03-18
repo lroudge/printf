@@ -8,15 +8,17 @@
 int print_rot13(va_list l)
 {
 	char *s = va_arg(l, char *);
+	char *t;
+
 	if (!s)
-		return 0;
-	char *t = _strdup(s);
+		return (0);
+	t = _strdup(s);
 	if (!t)
-		return 0;
+		return (0);
 	rot13(t);
 	_printf("%s", t);
 	free(t);
-	return 0;
+	return (0);
 }
 
 /**

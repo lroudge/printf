@@ -25,7 +25,7 @@ is NULL or if the functions encounters any errors, it returns -1.
 The format string can contain any characters, just like a regular string, in double quotes, which will be printed as is. For example, _printf(\(dqHello\(dq) will print: Hello.
 However, this format string can contain
 .I conversion specifiers.
-These start with a %, and are followed with a character (see 
+These start with a %, and are followed with a character (see
 .I conversion specifiers
 ). Special characters like a new line are escaped, for example _printf(\(dq\\n\(dq) will print a new line.
 .sp
