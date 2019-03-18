@@ -24,12 +24,9 @@ int print_int(va_list l)
 int print_unsigned(va_list l)
 {
 	unsigned int u = va_arg(l, unsigned int);
-	int res = count_digit(u);
+	char *str = convert(u, 10, 0);
 
-	if (!u)
-		res++;
-	print_unsigned_number(u);
-	return (res);
+	return (_printf("%s", str));
 }
 
 /**
