@@ -8,17 +8,20 @@
 int print_rot13(va_list l)
 {
 	int i, j;
-	char rot13[] = "abcdefghijklmnopqrstuvwxyz \nABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char ROT13[] = "nopqrstuvwxyzabcdefghijklm \nNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *s = va_arg(l, char *);
 
 	for (j = 0; s[j]; j++)
 	{
-		for (i = 0; i <= 52; i++)
+		if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a') || s[j] > 'z')
+			_putchar(s[j]);
+		else
 		{
-			if (s[j] == rot13[i])
+			for (i = 0; i <= 52; i++)
 			{
-				_putchar(ROT13[i]);
+				if (s[j] == rot13[i])
+					_putchar(ROT13[i]);
 			}
 		}
 	}
