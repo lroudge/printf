@@ -21,6 +21,5 @@ int (*get_print(char s))(va_list);
 int print_string(va_list l);
 int print_char(va_list l);
 int _putchar(char c);
-int _strcmp(const char *s1, const char *s2);
 
 #endif

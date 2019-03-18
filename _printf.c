@@ -10,7 +10,7 @@
  */
 int _printf(const char *fmt, ...)
 {
-	if (!fmt || !_strcmp(fmt, "%"))
+	if (!fmt)
 		return (-1);
 	int (*pfunc)(va_list);
 	const char *p;
