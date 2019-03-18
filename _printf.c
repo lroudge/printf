@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	int count = 0;
 	va_list arguments;
 
-	va_start(arguments, fmt);
+	va_start(arguments, format);
 
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
