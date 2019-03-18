@@ -23,7 +23,7 @@ int print_int(va_list l)
  */
 int print_unsigned(va_list l)
 {
-	int u = va_arg(l, int);
+	unsigned int u = va_arg(l, unsigned int);
 	int res = count_digit(u);
 
 	if (!u)
