@@ -26,7 +26,7 @@ int print_unsigned(va_list l)
 	unsigned int u = va_arg(l, unsigned int);
 	char *str = convert(u, 10, 0);
 
-	return (_printf("%s", str));
+	return (_puts(str));
 }
 
 /**

@@ -8,14 +8,11 @@
  */
 int print_string(va_list l)
 {
-	int i = 0;
 	char *s = va_arg(l, char *);
 
 	if (!s)
 		s = "(null)";
-	while (s[i])
-		_putchar(s[i++]);
-	return (i);
+	return (_puts(s));
 }
 
 /**
@@ -27,4 +24,18 @@ int print_char(va_list l)
 {
 	_putchar(va_arg(l, int));
 	return (1);
+}
+
+/**
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
+ * Return: number of chars written
+ */
+int _puts(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
+	return (i);
 }

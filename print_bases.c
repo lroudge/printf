@@ -13,7 +13,7 @@ int print_hex(va_list l)
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 1);
 
-	return (_printf("%s", str));
+	return (_puts(str));
 }
 
 /**
@@ -29,7 +29,7 @@ int print_hex_big(va_list l)
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 0);
 
-	return (_printf("%s", str));
+	return (_puts(str));
 }
 
 /**
@@ -44,7 +44,7 @@ int print_binary(va_list l)
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert_binary(num, 2);
 
-	return (_printf("%s", str));
+	return (_puts(str));
 }
 
 /**
@@ -59,5 +59,5 @@ int print_octal(va_list l)
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 8, 0);
 
-	return (_printf("%s", str));
+	return (_puts(str));
 }

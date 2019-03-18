@@ -31,7 +31,7 @@ int (*get_print(char s))(va_list);
 int print_string(va_list l);
 int print_char(va_list l);
 int _putchar(char c);
-
+int _puts(char *str);
 int print_rot13(va_list l);
 int print_rev(va_list l);
 
