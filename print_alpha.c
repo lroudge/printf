@@ -6,9 +6,9 @@
  * @l: va_list arguments from _printf
  * Return: number of char printed
  */
-unsigned int print_string(va_list l)
+int print_string(va_list l)
 {
-	unsigned int i = 0;
+	int i = 0;
 	char *s = va_arg(l, char *);
 
 	if (!s)
@@ -23,7 +23,7 @@ unsigned int print_string(va_list l)
  * @l: va_list arguments from _printf
  * Return: number of char printed
  */
-unsigned int print_char(va_list l)
+int print_char(va_list l)
 {
 	_putchar(va_arg(l, int));
 	return (1);

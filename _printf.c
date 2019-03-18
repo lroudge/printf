@@ -12,7 +12,7 @@ int _printf(const char *fmt, ...)
 {
 	if (!fmt || !_strcmp(fmt, "%"))
 		return (-1);
-	unsigned int (*pfunc)(va_list);
+	int (*pfunc)(va_list);
 	const char *p;
 	int count = 0;
 	va_list arguments;

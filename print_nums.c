@@ -5,10 +5,10 @@
  * @l: va_list of arguments from _printf
  * Return: number of char printed
  */
-unsigned int print_int(va_list l)
+int print_int(va_list l)
 {
 	int n = va_arg(l, int);
-	unsigned int res = count_digit(n);
+	int res = count_digit(n);
 
 	if (n <= 0)
 		res++;
@@ -21,10 +21,10 @@ unsigned int print_int(va_list l)
  * @l: va_list of arguments from _printf
  * Return: number of char printed
  */
-unsigned int print_unsigned(va_list l)
+int print_unsigned(va_list l)
 {
-	unsigned int u = va_arg(l, unsigned int);
-	unsigned int res = count_digit(u);
+	int u = va_arg(l, int);
+	int res = count_digit(u);
 
 	if (!u)
 		res++;
@@ -73,7 +73,7 @@ void print_unsigned_number(unsigned int n)
  * @i: integer to evaluate
  * Return: number of digits
  */
-unsigned int count_digit(int i)
+int count_digit(int i)
 {
 	unsigned int d = 0;
 	unsigned int u;

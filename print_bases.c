@@ -8,10 +8,10 @@
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-unsigned int print_hex(va_list l)
+int print_hex(va_list l)
 {
-	unsigned int i = 0;
-	int num = va_arg(l, int);
+	int i = 0;
+	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 1);
 
 	while (str[i])
@@ -27,9 +27,9 @@ unsigned int print_hex(va_list l)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-unsigned int print_hex_big(va_list l)
+int print_hex_big(va_list l)
 {
-	unsigned int i = 0;
+	int i = 0;
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 16, 0);
 
@@ -45,9 +45,9 @@ unsigned int print_hex_big(va_list l)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-unsigned int print_binary(va_list l)
+int print_binary(va_list l)
 {
-	unsigned int i = 0;
+	int i = 0;
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 2, 0);
 
@@ -63,9 +63,9 @@ unsigned int print_binary(va_list l)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-unsigned int print_octal(va_list l)
+int print_octal(va_list l)
 {
-	unsigned int i = 0;
+	int i = 0;
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 8, 0);
 
