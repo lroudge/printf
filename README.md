@@ -31,10 +31,10 @@ What you should learn from this project:
   - x : converts the input into a hexadecimal number
   - X : converts the input into a hexadecimal number with capital letters
 
-### [5. Nothing in fine print is ever good news]
+### [5. Nothing in fine print is ever good news](./_putchar.c)
 * Use a local buffer of 1024 chars in order to call write as little as possible.
 
-### [6. My weakness is wearing too much leopard print]
+### [6. My weakness is wearing too much leopard print](./bigS.c)
 * Handle the following custom conversion specifier:
   - S : prints the string
   - Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
@@ -70,7 +70,7 @@ What you should learn from this project:
 * Handle the following custom conversion specifier:
   - r : prints the reversed string
 
-### [15. The flood of print has turned reading into a process of gulping rather than savoring]
+### [15. The flood of print has turned reading into a process of gulping rather than savoring](./rot13.c)
 * Handle the following custom conversion specifier:
   - R : prints the rot13'ed string
 
