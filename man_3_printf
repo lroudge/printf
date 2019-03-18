@@ -1,4 +1,4 @@
-.TH man 3 "17 March 2019" "0.32" "_PRINTF"
+.TH man 3 "17 March 2019" "HOLBERTON SCHOOL" "_PRINTF"
 .SH NAME
 .B _printf
 - formatted output conversion
@@ -30,10 +30,44 @@ These start with a %, and are followed with a character (see
 ). Special characters like a new line are escaped, for example _printf(\(dq\\n\(dq) will print a new line.
 .sp
 .B Conversion specifiers
-
-.SH OPTIONS
+.sp
+These are the characters that specify the type of the variable that needs to be printed. The variables to be printed are separated from the format string with a comma. Each variable passed to _printf need to have a conversion specifier.
+.sp
+.B i, d
+- Both these specifiers are for
+.I int
+arguments. They convert the variable to a decimal number, positive or negative.
+.sp
+.B c
+- Prints a
+.I single character.
+.sp
+.B s
+- Prints an entire
+.I string.
+.sp
+.B u
+- Prints an
+.I unsigned int.
+.sp
+.B x, X
+- Respecively print a number in lowercase and uppercase
+.I hexadecimal
+base.
+.sp
+.B o, b
+- Respectively print a number in
+.I octal
+and
+.I binary
+base.
+.sp
+.B %
+- Acts like an escape for the character %. To print \(dq%\(dq, the format string should contain \(dq%%\(dq.
+.sp
 .SH SEE ALSO
+.I printf(3)
 .SH BUGS
-No known bugs.
+_printf does not take care of length and precision modifiers yet. For example, _printf(\(dq%hx\(dq) will not produce the same output at the call to the standard library printf.
 .SH AUTHORS
 Tu Vo and Laura Roudge, Cohort 8.
