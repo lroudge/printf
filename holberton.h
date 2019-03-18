@@ -37,5 +37,6 @@ int print_rot13(va_list l);
 char *rot13(char *s);
 int _strlen(char *s);
 char *_strdup(char *str);
+int print_rev(va_list l);
 
 #endif
