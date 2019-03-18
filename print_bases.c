@@ -10,13 +10,10 @@
  */
 int print_hex(va_list l)
 {
-	int i = 0;
-	unsigned int num = va_arg(l, unsigned int);
+	long int num = va_arg(l, long int);
 	char *str = convert(num, 16, 1);
 
-	while (str[i])
-		_putchar(str[i++]);
-	return (i);
+	return (_printf("%s", str));
 }
 
 /**
@@ -29,13 +26,10 @@ int print_hex(va_list l)
  */
 int print_hex_big(va_list l)
 {
-	int i = 0;
-	unsigned int num = va_arg(l, unsigned int);
+	long int num = va_arg(l, long int);
 	char *str = convert(num, 16, 0);
 
-	while (str[i])
-		_putchar(str[i++]);
-	return (i);
+	return (_printf("%s", str));
 }
 
 /**
@@ -48,7 +42,7 @@ int print_hex_big(va_list l)
 int print_binary(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);
-	char *str = convert(num, 2, 0);
+	char *str = convert_binary(num, 2);
 
 	return (_printf("%s", str));
 }
@@ -62,11 +56,8 @@ int print_binary(va_list l)
  */
 int print_octal(va_list l)
 {
-	int i = 0;
-	unsigned int num = va_arg(l, unsigned int);
+	long int num = va_arg(l, long int);
 	char *str = convert(num, 8, 0);
 
-	while (str[i])
-		_putchar(str[i++]);
-	return (i);
+	return (_printf("%s", str));
 }
