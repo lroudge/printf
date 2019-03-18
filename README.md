@@ -1,1 +1,4 @@
-New try for the printf repo.
+# 0x10. C - printf
+
+## Description
+What you should learn from this project:

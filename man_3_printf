@@ -1,0 +1,39 @@
+.TH man 3 "17 March 2019" "0.32" "_PRINTF"
+.SH NAME
+.B _printf
+- formatted output conversion
+.SH SYNOPSIS
+.B #include \(dqholberton.h\(dq
+.sp
+.B int _printf(const char *
+.I format
+.B , ...);
+.SH DESCRIPTION
+The function _printf is a variadic function that produces a string according to a
+.I format
+and prints it to the standard output, much like the C standard library function printf. It can receive a variable number of arguments.
+This function has been created in the context of a first-year project for Holberton School.
+.sp
+.B Return value
+.sp
+On success, _printf returns the number of characters printed. If
+.I format
+is NULL or if the functions encounters any errors, it returns -1.
+.sp
+.B Format of the format string
+.sp
+The format string can contain any characters, just like a regular string, in double quotes, which will be printed as is. For example, _printf(\(dqHello\(dq) will print: Hello.
+However, this format string can contain
+.I conversion specifiers.
+These start with a %, and are followed with a character (see 
+.I conversion specifiers
+). Special characters like a new line are escaped, for example _printf(\(dq\\n\(dq) will print a new line.
+.sp
+.B Conversion specifiers
+
+.SH OPTIONS
+.SH SEE ALSO
+.SH BUGS
+No known bugs.
+.SH AUTHORS
+Tu Vo and Laura Roudge, Cohort 8.
