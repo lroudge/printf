@@ -36,9 +36,8 @@ unsigned int print_unsigned(va_list l)
  * print_number - helper function that loops through
  * an integer and prints all its digits
  * @n: integer to be printed
- * Return: number of digits
  */
-unsigned int print_number(int n)
+void print_number(int n)
 {
 	unsigned int n1;
 
@@ -52,7 +51,7 @@ unsigned int print_number(int n)
 
 	if (n1 / 10)
 		print_number(n1 / 10);
-	return (_putchar((n1 % 10) + '0'));
+	_putchar((n1 % 10) + '0');
 }
 
 /**
@@ -60,13 +59,12 @@ unsigned int print_number(int n)
  * that loops through an unsigned int and prints
  * its digits
  * @n: unsigned int to be printed
- * Return: number of digits
  */
-unsigned int print_unsigned_number(unsigned int n)
+void print_unsigned_number(unsigned int n)
 {
 	if (n / 10)
 		print_number(n / 10);
-	return (_putchar((n % 10) + '0'));
+	_putchar((n % 10) + '0');
 }
 
 /**
