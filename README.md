@@ -66,7 +66,7 @@ What you should learn from this project:
 ### [13. Every time that I wanted to give up, if I saw an interesting textile, print what ever, suddenly I would see a collection]
 * Handle the - flag character for non-custom conversion specifiers.
 
-### [14. Print is the sharpest and the strongest weapon of our party]
+### [14. Print is the sharpest and the strongest weapon of our party](./rev.c)
 * Handle the following custom conversion specifier:
   - r : prints the reversed string
 
