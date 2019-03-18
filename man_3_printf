@@ -65,8 +65,17 @@ base.
 .B %
 - Acts like an escape for the character %. To print \(dq%\(dq, the format string should contain \(dq%%\(dq.
 .sp
+.B r, R
+- Respectively print a string in reverse and in ROT13 encryption.
+.sp
+.B S
+- Prints a string, but non-printable characters are printed this way: \\x, followed by the ASCII code value in uppercase hexadecimal.
 .SH SEE ALSO
 .I printf(3)
+.I _putchar.c
+.SH NOTES
+_printf uses a custom character printing function called _putchar, that uses the system call write(). _putchar uses a static buffer of 1024 bytes and a static incrementing variable. That way, everytime _putchar is called inside _printf, the character is stored inside the buffer and the function moves to the next character, until _printf calls _putchar(-1), which \(dqflushes\(dq the buffer and resets the incrementing variable to 0. That way, _putchar only needs to call write one time, passing to it the whole buffer and the number of bytes in it, which is given by the value of the incrementing variable.
+.sp
 .SH BUGS
 _printf does not take care of length and precision modifiers yet. For example, _printf(\(dq%hx\(dq) will not produce the same output at the call to the standard library printf.
 .SH AUTHORS
