@@ -47,7 +47,6 @@ int print_hex_big(va_list l)
  */
 int print_binary(va_list l)
 {
-	int i = 0;
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 2, 0);
 
