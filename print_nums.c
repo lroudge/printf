@@ -52,19 +52,6 @@ void print_number(int n)
 }
 
 /**
- * print_unsigned_number - helper function
- * that loops through an unsigned int and prints
- * its digits
- * @n: unsigned int to be printed
- */
-void print_unsigned_number(unsigned int n)
-{
-	if (n / 10)
-		print_unsigned_number(n / 10);
-	_putchar((n % 10) + '0');
-}
-
-/**
  * count_digit - returns the number of digits in an integer
  * for _printf
  * @i: integer to evaluate

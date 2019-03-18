@@ -19,7 +19,6 @@ typedef struct printHandler
 int print_int(va_list l);
 void print_number(int n);
 int print_unsigned(va_list l);
-void print_unsigned_number(unsigned int n);
 int print_hex(va_list l);
 int print_hex_big(va_list l);
 int print_binary(va_list l);
