@@ -17,7 +17,7 @@ What you should learn from this project:
   - d : converts input into a base 10 integer
   - i : converts input into an integer
 
-### [2. Just becase it's in print doesn't mean it's the gospel](.**ADD IN MAN LINK**)
+### [2. Just because it's in print doesn't mean it's the gospel]
 * Create a man page for your function
   
 ### [3. With a face like mine, I do better in print](./print_bases.c)
@@ -47,7 +47,7 @@ What you should learn from this project:
 * Handle the following flag characters for non-custom conversion specifiers:
   - + :
   - space :
-  - # :
+  - ## :
 
 ### [9. Sarcasm is lost in print]
 * Handle the following length modifiers for non-custom conversion specifiers:
