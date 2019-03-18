@@ -47,7 +47,7 @@ What you should learn from this project:
 * Handle the following flag characters for non-custom conversion specifiers:
   - + :
   - space :
-  - ## :
+  - \# :
 
 ### [9. Sarcasm is lost in print]
 * Handle the following length modifiers for non-custom conversion specifiers:
