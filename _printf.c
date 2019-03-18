@@ -31,13 +31,9 @@ int _printf(const char *format, ...)
 				continue;
 			}
 			pfunc = get_print(*p);
-			if (!pfunc)
-			{
-				_putchar('%');
-				_putchar(*p);
-				count += 2;
-			} else
-				count += pfunc(arguments);
+			count += (pfunc)
+				? pfunc(arguments)
+				: _printf("%%%c", *p);
 		} else
 		{
 			count++;
