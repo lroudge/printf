@@ -51,9 +51,7 @@ int print_binary(va_list l)
 	unsigned int num = va_arg(l, unsigned int);
 	char *str = convert(num, 2, 0);
 
-	while (str[i])
-		_putchar(str[i++]);
-	return (i);
+	return (_printf("%s", str));
 }
 
 /**
