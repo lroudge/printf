@@ -34,8 +34,6 @@ int _putchar(char c);
 int _puts(char *str);
 int print_rot13(va_list l);
 int print_rev(va_list l);
-int _atoi(char *s);
-int isDigit(int i);
 int print_bigS(va_list l);
 
 #endif

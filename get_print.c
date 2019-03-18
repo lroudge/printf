@@ -23,12 +23,13 @@ int (*get_print(char s))(va_list)
 		{'b', print_binary},
 		{'o', print_octal},
 		{'R', print_rot13},
-		{'r', print_rev}
+		{'r', print_rev},
+		{'S', print_bigS}
 		};
 
 	register int i;
 
-	for (i = 0; i < 11; i++)
+	for (i = 0; i < 12; i++)
 		if (func_arr[i].c == s)
 			return (func_arr[i].f);
 	return (NULL);
