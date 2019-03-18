@@ -14,6 +14,9 @@ int print_bigS(va_list l)
 	char *res;
 	char *s = va_arg(l, char *);
 
+	if (!s)
+		return (_puts("(null)"));
+
 	for (i = 0; s[i]; i++)
 	{
 		if (s[i] > 0 && (s[i] < 32 || s[i] >= 127))
