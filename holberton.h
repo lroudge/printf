@@ -16,7 +16,7 @@ typedef struct printHandler
 	int (*f)(va_list ap);
 } ph;
 
-int _printf(const char *fmt, ...);
+int _printf(const char *format, ...);
 int (*get_print(char s))(va_list);
 int print_string(va_list l);
 int print_char(va_list l);

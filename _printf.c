@@ -2,23 +2,24 @@
 
 /**
  * _printf - produces output according to a format
- * @fmt: format string containing the characters and the specifiers
+ * @format: format string containing the characters and the specifiers
  * Description: this function will call the get_print() function that will
  * determine which printing function to call depending on the conversion
  * specifiers contained into fmt
  * Return: length of the formatted output string
  */
-int _printf(const char *fmt, ...)
+int _printf(const char *format, ...)
 {
-	if (!fmt)
-		return (-1);
 	int (*pfunc)(va_list);
 	const char *p;
 	int count = 0;
 	va_list arguments;
 
 	va_start(arguments, fmt);
-	for (p = fmt; *p; p++)
+
+	if (!format || (format[0] == '%' && !format[1]))
+		return (-1);
+	for (p = format; *p; p++)
 	{
 		if (*p == '%')
 		{
