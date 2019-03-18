@@ -24,7 +24,7 @@ int print_hex(va_list l);
 int print_hex_big(va_list l);
 int print_binary(va_list l);
 int print_octal(va_list l);
-char *convert(long int num, int base, int lowercase);
+char *convert(unsigned long long num, int base, int lowercase);
 char *convert_binary(unsigned int num, int base);
 int count_digit(int i);
 int _printf(const char *fmt, ...);
