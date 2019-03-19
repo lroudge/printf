@@ -50,4 +50,6 @@ int print_rot13(va_list l);
 int print_rev(va_list l);
 int print_bigS(va_list l);
 
+/* print_address */
+int print_address(va_list l);
 #endif

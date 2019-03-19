@@ -24,12 +24,14 @@ int (*get_print(char s))(va_list)
 		{'o', print_octal},
 		{'R', print_rot13},
 		{'r', print_rev},
-		{'S', print_bigS}
+		{'S', print_bigS},
+		{'p', print_address}
 		};
+	int flags = 13;
 
 	register int i;
 
-	for (i = 0; i < 12; i++)
+	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
 			return (func_arr[i].f);
 	return (NULL);
