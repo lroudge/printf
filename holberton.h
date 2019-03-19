@@ -10,12 +10,16 @@
  * @plus: flag for the '+' character
  * @space: flag for the ' ' character
  * @hash: flag for the '#' character
+ * @h: flag for the 'h' character
+ * @l: flag for the 'l' character
  */
 typedef struct flags
 {
 	int plus;
 	int space;
 	int hash;
+	int h;
+	int l;
 } flags_t;
 
 /**
