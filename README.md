@@ -14,9 +14,7 @@ What you should learn from this project:
 ---
 
 ## Prototype
-**int _printf(const char *format, ...);**
-
----
+_int \_printf(const char *format, ...);_
 
 ## Usage
 * Prints a string to the standard output, according to a given format
@@ -33,6 +31,8 @@ What you should learn from this project:
 ---
 
 ## Tasks
+
+> These are all the tasks of this project, the ones that are completed link to the corresponding files
 
 ### [0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life](./_printf.c)
 * Write a function that produces output according to format.
