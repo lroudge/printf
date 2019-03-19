@@ -40,4 +40,3 @@ int _puts(char *str)
 		_putchar(str[i]);
 	return (i);
 }
-
