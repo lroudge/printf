@@ -81,4 +81,4 @@ What you should learn from this project:
 
 ### Authors
 * **Tu Vo** - [tuvo1106@gmail.com](https://github.com/tuvo1106)
-* **Laura Roudge** - [lauradrc@hotmail.fr](https://github.com/lroudge)
+* **Laura Roudge** - [laura.derohan@gmail.com](https://github.com/lroudge)
