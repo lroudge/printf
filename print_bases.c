@@ -42,7 +42,7 @@ int print_hex_big(va_list l)
 int print_binary(va_list l)
 {
 	unsigned int num = va_arg(l, unsigned int);
-	char *str = convert_binary(num, 2);
+	char *str = convert(num, 2, 0);
 
 	return (_puts(str));
 }
