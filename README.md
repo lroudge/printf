@@ -73,14 +73,14 @@ These are all the tasks of this project, the ones that are completed link to the
 
 ### [8. The big print gives and the small print takes away](./get_flag.c)
 * Handle the following flag characters for non-custom conversion specifiers:
-  - \+ :
-  - space :
-  - \# :
+  - \+ : adds a \+ in front of signed positive numbers and a \- in front of signed negative numbers
+  - space : same as \+, but adds a space (is overwritten by \+)
+  - \# : adds a 0 in front of octal conversions that don't begin with one, and a 0x or 0X for x or X conversions
 
 ### [9. Sarcasm is lost in print]
 * Handle the following length modifiers for non-custom conversion specifiers:
-  - l :
-  - h :
+  - l : converts d, i, u, o, x, X conversions in short signed or unsigned ints
+  - h : converts d, i, u, o, x, X conversions in long signed or unsigned ints
 
 ### [10. Print some money and give it to us for the rain forests]
 * Handle the field width for non-custom conversion specifiers.
