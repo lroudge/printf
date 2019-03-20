@@ -25,6 +25,11 @@ int _printf(const char *format, ...)
 		if (*p == '%')
 		{
 			p++;
+			if (*p == ' ' && !get_print(*(p + 1)))
+			{
+				count += _puts("% ");
+				continue;
+			}
 			if (*p == '%')
 			{
 				count += _putchar('%');
