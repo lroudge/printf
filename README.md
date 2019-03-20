@@ -20,7 +20,8 @@ What you should learn from this project:
 * Prints a string to the standard output, according to a given format
 * All files were created and compiled on Ubuntu 14.04.4 LTS using GCC 4.8.4 with the command ```gcc -Wall -Werror -Wextra -pedantic *.c```
 * Returns the number of characters in the output string on success, -1 otherwise
-* Call it this way: ```_printf("format string", arguments...)```
+* Call it this way: ```_printf("format string", arguments...)``` where ```format string``` can contain conversion specifiers and flags,
+along with regular characters
 
 ## Examples
 
@@ -36,6 +37,8 @@ These are all the tasks of this project, the ones that are completed link to the
 
 ### [0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life](./_printf.c)
 * Write a function that produces output according to format.
+  - c : converts input into a character
+  - s : converts input into a string
 
 ### [1. Education is when you read the fine print. Experience is what you get if you don't](./print_nums.c)
 * Handle the following conversion specifiers:
